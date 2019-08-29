@@ -2,27 +2,54 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.parallax {
+    background-image: url("sky.png");
+    min-height: 550px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#quote {
+    padding-top: 75px;
+    height: 450px;
+}
+
 #container{
     position: relative;
-    text-align: center;
-    color: white;
+    color: black;
+    height: 170px;
+    width: 1400px;
+    text-align: left;
+}
+
+#links {
+    margin-left: 1100px;
+    display: flex;
+    width: 200px;
+    transform: translate(0px, -150px);
+}
+
+.link {
+    margin: auto;
 }
 
 #centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, 100%);
     font-size: 50px;
+    margin-left: 50px;
 }
 
 #tasks {
-    position: relative;
     margin: auto;
-    background-color: lightpink;
+    background-color: white;
     width: 1400px;
     display: flex; 
     justify-content: center;
+    margin-bottom: 10px;
 }
 
 .task_button {
@@ -31,13 +58,40 @@
     padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: lightpink;
+    background-color: white;
     border: none;
     text-decoration: none;
     color: black;
     font-size: 18px;
+    border-style: solid;
+    border-color: transparent;
 }
 
 .task_button:hover {
+    border-color: black;
+}
+
+#main {
+    margin: auto;
+    margin-top: 5px;
+    width: 1400px;
+    height: 1000px;
+    display: flex;
+}
+
+#profile_pic {
+    width: 400px;
+    height: 563px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#text {
     background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 1000px;
+    height: 524px;
 }
